@@ -1,7 +1,7 @@
 class TasksController < ApplicationController
 
   def index
-    render json: Task.order(:id)
+    render json: Task.order(:created_at)
   end
 
   def update
